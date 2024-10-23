@@ -38,7 +38,7 @@ public class MRO extends BaseTest{
 			  test.info("Step 2: Enable Bluetooth and connect ");
 			  
 		 
-		  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		  try {
 	           // Enable Bluetooth using adb command
 	           Runtime.getRuntime().exec("adb shell am broadcast -a io.appium.settings.bluetooth --es setstatus enable"); // For enabling Bluetooth
@@ -61,8 +61,15 @@ public class MRO extends BaseTest{
 			 driver.findElement(AppiumBy.xpath("//android.widget.Button[@resource-id=\"com.geotoll.egpsflex_android.dev:id/btn_login\"]")).click();
 			  longPress(driver.findElement(AppiumBy.xpath("//android.widget.Button[@resource-id=\"com.geotoll.egpsflex_android.dev:id/btn_login\"]")));
 			  waitForTime(10000);
-			  
-		    } catch (Exception e) {
+			  String ExpectedTittle = "Welcome, Akshay QATest ";	
+				String ActualTittle = 	 driver.findElement(By.id("com.geotoll.egpsflex_android.dev:id/txt_welcome_label")).getText();
+				System.out.println(ActualTittle);
+		       Assert.assertEquals(ActualTittle, ExpectedTittle, "ActualTittle is passed");
+		       test.pass("Login Test Passed");
+		       test.addScreenCaptureFromPath(ScreenshotUtils.takeScreenshot(driver, "LoginPass"));
+		    } 
+		  
+		  catch (Exception e) {
 		       // e.printStackTrace(); 
 		        test.fail(e);
 		        test.addScreenCaptureFromPath(ScreenshotUtils.takeScreenshot(driver, "Unable to Login"));
@@ -72,18 +79,20 @@ public class MRO extends BaseTest{
 		
 //---------------------------------Login Done -------------------------------------------------------------------------------------------------------------//		
 	try {
-		  
+		   
 		 WebElement NewBluetoothFindStart = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.TextView[@resource-id=\"com.geotoll.egpsflex_android.dev:id/txt_position\" and @text=\"1\"]")));
 		 NewBluetoothFindStart.click();  
 		 waitForTime(2000);
+		 test.info(" Clicked on Find Bluetooth");
 		 WebElement BluetoothSelectConnect = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.TextView[@resource-id=\"com.geotoll.egpsflex_android.dev:id/btn_connect\"]")));
 		 BluetoothSelectConnect.click(); 
-		
+		test.info(" Selected Bluetooth"); 
 		 waitForTime(1000);
         // For NO Popup		 WebElement BluetoothSelectPopup = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.Button[@resource-id=\"android:id/button2\"]")));
 		 //For Yes Popup
 		 WebElement BluetoothSelectPopupYes = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.Button[@resource-id=\"android:id/button1\"]")));
 		 BluetoothSelectPopupYes.click();
+		 test.info(" Accepted Popup"); 
 		 waitForTime(7000); 
 		 test.pass("Bluetooth Configuration Completed"); 
 		 test.addScreenCaptureFromPath(ScreenshotUtils.takeScreenshot(driver, "Bluetooth Configured"));
@@ -101,42 +110,56 @@ public class MRO extends BaseTest{
 		 WebElement CaptureVINNumber = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.TextView[@resource-id=\"com.geotoll.egpsflex_android.dev:id/txt_position\" and @text=\"2\"]")));
 		 CaptureVINNumber.click();  
 		 waitForTime(2000);
+		 	 test.info(" Clicked on Find VIM");
 		 // CAPTURE VIN PICTURE CLICK BUTTON
 		 WebElement ShutterClick = wait.until(ExpectedConditions.elementToBeClickable(By.id("com.geotoll.egpsflex_android.dev:id/capture")));
 		 ShutterClick.click();  
+		 test.info(" Taken Pic");
 		 waitForTime(7000);
 		 // Gone for Mannual review
 		 WebElement ConfirmVIN = wait.until(ExpectedConditions.elementToBeClickable(By.id("com.geotoll.egpsflex_android.dev:id/btn_confirm")));
 		 ConfirmVIN.click();  
-		 waitForTime(12000); 
+		 waitForTime(20000);
+		  test.info(" Confirm Pic"); 
 		 // Back Script need to write
+		 // Unecessary taking lot time / take more time/ refresh/ restart app after login
+		 WebElement BackButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("com.geotoll.egpsflex_android.dev:id/img_back")));
+		 BackButton.click();
+		 test.info(" Pressed Back Button"); 
+		 waitForTime(2000);
 		 test.pass("Vim  Configuration Completed"); 
 		 test.addScreenCaptureFromPath(ScreenshotUtils.takeScreenshot(driver, "VIM Configured"));
 	} catch (Exception e) {
 	       // e.printStackTrace(); 
         test.fail(e);
         test.addScreenCaptureFromPath(ScreenshotUtils.takeScreenshot(driver, "Unable to Configure VIN"));
-        Assert.fail("Test failed due to exception: " + e.getMessage());
-    }
+        Assert.fail("Test failed due to exception: " + e.getMessage());  
+    } 
 		 //----------------VIN Add Done(2st step)---------------------------------------------//	
 	
 	try {	 
 		 WebElement CaptureOdometerReadingClick = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.TextView[@resource-id=\"com.geotoll.egpsflex_android.dev:id/txt_position\" and @text=\"3\"]")));
 		 CaptureOdometerReadingClick.click();  
 		 waitForTime(3000); 
+		 test.info(" Clicked on CaptureOdometerReading"); 
 		 WebElement ShutterClick = wait.until(ExpectedConditions.elementToBeClickable(By.id("com.geotoll.egpsflex_android.dev:id/capture")));
 		 ShutterClick.click();  
-		 waitForTime(5000);
+		 test.info("  Captured Pic"); 
+		 waitForTime(6000);
 		// Same thing happen as VIN it stopped and gone for manual odometer processing
 		 WebElement Retake = wait.until(ExpectedConditions.elementToBeClickable(By.id("com.geotoll.egpsflex_android.dev:id/btn_retake")));
 		 Retake.click();  
 		 waitForTime(3000);
+		 test.info("  Retake"); 
 		 ShutterClick.click();  
-		 waitForTime(5000);
+		 waitForTime(8000);
+		 test.info("  Captured Pic"); 
 		 Retake.click(); 
 		 waitForTime(3000);
+		 test.info("  Retake"); 
 		 ShutterClick.click(); 
-		 waitForTime(12000);
+		 waitForTime(20000);
+		 test.info("  Captured Pic");
 		 test.pass("Odometer  Configuration Completed"); 
 		 test.addScreenCaptureFromPath(ScreenshotUtils.takeScreenshot(driver, "Odometer Configured"));
 	}

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Oct 22 18:53:22 IST 2024</td>
+<td>Started on:</td><td>Wed Oct 23 15:54:38 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>28 seconds (28501 ms)</td>
+<tr><td>Total time:</td><td>48 seconds (48074 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,28 +76,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.tests.LoginTest.LoginLogout()'><b>LoginLogout</b><br>Test class: com.tests.LoginTest<br>Parameters: udupaakshaya+QATest@gmail.com,  New@1234</td>
-<td><div><pre>java.lang.AssertionError: Test failed due to exception: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+<td title='com.tests.MRO.Login()'><b>Login</b><br>Test class: com.tests.MRO<br>Parameters: udupaakshaya+QATest@gmail.com,  New@1234</td>
+<td><div><pre>java.lang.AssertionError: Test failed due to exception: The element &apos;By.id: com.geotoll.egpsflex_android.dev:id/btn_retake&apos; is not linked to the same object in DOM anymore
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [46503ed6-6211-4cd2-ad71-e207e8c0a353, findElement {using=xpath, value=//android.widget.Button[@resource-id=&quot;com.geotoll.egpsflex_android.dev:id/img_close&quot;]}]
+Command: [a7c5c3e0-0058-4b29-bb7e-2b07c0d4419d, clickElement {id=00000000-0000-0788-ffff-ffff0000015a}]
 Capabilities {appium:appActivity: com.geotoll.egpsflex_androi..., appium:appPackage: com.geotoll.egpsflex_androi..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.geotoll.egpsflex_androi..., appPackage: com.geotoll.egpsflex_androi..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: ZD222JNNVH, platformName: ANDROID, platformVersion: 14.0}, appium:deviceApiLevel: 34, appium:deviceManufacturer: motorola, appium:deviceModel: moto g54 5G, appium:deviceName: ZD222JNNVH, appium:deviceScreenDensity: 400, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: ZD222JNNVH, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.5, appium:platformVersion: 14, appium:statBarHeight: 117, appium:takesScreenshot: true, appium:viewportRect: {height: 2283, left: 0, top: 117, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 46503ed6-6211-4cd2-ad71-e207e8c0a353
-	at com.tests.LoginTest.LoginLogout(LoginTest.java:113)
+Element: [[AndroidDriver:  on ANDROID (a7c5c3e0-0058-4b29-bb7e-2b07c0d4419d)] -&gt; id: com.geotoll.egpsflex_android.dev:id/btn_retake]
+Session ID: a7c5c3e0-0058-4b29-bb7e-2b07c0d4419d
+	at com.tests.MRO.Login(MRO.java:170)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace345060426", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace345060426'><pre>java.lang.AssertionError: Test failed due to exception: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace847841178", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace847841178'><pre>java.lang.AssertionError: Test failed due to exception: The element &apos;By.id: com.geotoll.egpsflex_android.dev:id/btn_retake&apos; is not linked to the same object in DOM anymore
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [46503ed6-6211-4cd2-ad71-e207e8c0a353, findElement {using=xpath, value=//android.widget.Button[@resource-id=&quot;com.geotoll.egpsflex_android.dev:id/img_close&quot;]}]
+Command: [a7c5c3e0-0058-4b29-bb7e-2b07c0d4419d, clickElement {id=00000000-0000-0788-ffff-ffff0000015a}]
 Capabilities {appium:appActivity: com.geotoll.egpsflex_androi..., appium:appPackage: com.geotoll.egpsflex_androi..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.geotoll.egpsflex_androi..., appPackage: com.geotoll.egpsflex_androi..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: ZD222JNNVH, platformName: ANDROID, platformVersion: 14.0}, appium:deviceApiLevel: 34, appium:deviceManufacturer: motorola, appium:deviceModel: moto g54 5G, appium:deviceName: ZD222JNNVH, appium:deviceScreenDensity: 400, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: ZD222JNNVH, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.5, appium:platformVersion: 14, appium:statBarHeight: 117, appium:takesScreenshot: true, appium:viewportRect: {height: 2283, left: 0, top: 117, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 46503ed6-6211-4cd2-ad71-e207e8c0a353
+Element: [[AndroidDriver:  on ANDROID (a7c5c3e0-0058-4b29-bb7e-2b07c0d4419d)] -&gt; id: com.geotoll.egpsflex_android.dev:id/btn_retake]
+Session ID: a7c5c3e0-0058-4b29-bb7e-2b07c0d4419d
 	at org.testng.Assert.fail(Assert.java:111)
-	at com.tests.LoginTest.LoginLogout(LoginTest.java:113)
+	at com.tests.MRO.Login(MRO.java:170)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -125,8 +127,8 @@ Session ID: 46503ed6-6211-4cd2-ad71-e207e8c0a353
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>21</td>
-<td>com.tests.LoginTest@2118cddf</td></tr>
+<td>40</td>
+<td>com.tests.MRO@623a8092</td></tr>
 </table><p>
 </body>
 </html>

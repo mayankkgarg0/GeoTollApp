@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.tests.LoginTest">
+      <class name="com.tests.MRO">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="LoginLogout" invocation-numbers="0"/>
+          <include name="Login" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.tests.LoginTest -->
+      </class> <!-- com.tests.MRO -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
