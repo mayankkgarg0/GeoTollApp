@@ -50,7 +50,7 @@ public class CustomExtentListener implements ITestListener {
 
 
 
-  private void captureScreenshot(ITestResult result, String status) {
+  public void captureScreenshot(ITestResult result, String status) {
       AppiumDriver driver = DriverManager.getDriver(); // Get the driver instance
       if (driver != null) {
           String screenshotPath = "screenshots/" + result.getName() + ".png";

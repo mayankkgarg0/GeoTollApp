@@ -7,7 +7,7 @@
   <test  name="Test">
     <classes>
  
-  <class name="com.tests.MRO"/>
+  <class name="com.tests.LoginTest"/>
   
   
      </classes>  

@@ -7,8 +7,8 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 
 public  class ExtentManager {
-	  protected static ExtentReports extent;
-	    protected static ExtentTest test;
+	  public static ExtentReports extent;
+	    public static ExtentTest test;
 
 	    public static ExtentReports getInstance() {
 	        if (extent == null) {

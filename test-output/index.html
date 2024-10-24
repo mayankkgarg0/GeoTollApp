@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\dell\eclipse-workspace\GeoToll\testng.xml</span>
+                    <span>C:\Users\dell\eclipse-workspace\GeoTollUAT\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.tests.MRO" class="method navigator-link" hash-for-method="Login(udupaakshaya+QATest@gmail.com,  New@1234)">Login(udupaakshaya+QATest@gmail.com,  New@1234)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.tests.LoginTest" class="method navigator-link" hash-for-method="LoginLogout(udupaakshaya+QATest@gmail.com,  New@1234)">LoginLogout(udupaakshaya+QATest@gmail.com,  New@1234)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -121,25 +121,24 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.tests.MRO</span>
+              <span class="class-name">com.tests.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Login(udupaakshaya+QATest@gmail.com,  New@1234)">
-                  </a> <!-- Login(udupaakshaya+QATest@gmail.com,  New@1234) -->
-                  <span class="method-name">Login</span>
+                  <a name="LoginLogout(udupaakshaya+QATest@gmail.com,  New@1234)">
+                  </a> <!-- LoginLogout(udupaakshaya+QATest@gmail.com,  New@1234) -->
+                  <span class="method-name">LoginLogout</span>
                   <span class="parameters">(udupaakshaya+QATest@gmail.com, New@1234)</span>
-                  <div class="stack-trace">java.lang.AssertionError: Test failed due to exception: The element &apos;By.id: com.geotoll.egpsflex_android.dev:id/btn_retake&apos; is not linked to the same object in DOM anymore
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+                  <div class="stack-trace">java.lang.AssertionError: Test failed due to exception: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [a7c5c3e0-0058-4b29-bb7e-2b07c0d4419d, clickElement {id=00000000-0000-0788-ffff-ffff0000015a}]
+Command: [fd4fbd1b-ef22-4d89-8d62-df896e0eec94, findElement {using=xpath, value=//android.widget.Button[@resource-id=&quot;com.geotoll.egpsflex_android.dev.uat:id/img_close&quot;]}]
 Capabilities {appium:appActivity: com.geotoll.egpsflex_androi..., appium:appPackage: com.geotoll.egpsflex_androi..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.geotoll.egpsflex_androi..., appPackage: com.geotoll.egpsflex_androi..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: ZD222JNNVH, platformName: ANDROID, platformVersion: 14.0}, appium:deviceApiLevel: 34, appium:deviceManufacturer: motorola, appium:deviceModel: moto g54 5G, appium:deviceName: ZD222JNNVH, appium:deviceScreenDensity: 400, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: ZD222JNNVH, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.5, appium:platformVersion: 14, appium:statBarHeight: 117, appium:takesScreenshot: true, appium:viewportRect: {height: 2283, left: 0, top: 117, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Element: [[AndroidDriver:  on ANDROID (a7c5c3e0-0058-4b29-bb7e-2b07c0d4419d)] -&gt; id: com.geotoll.egpsflex_android.dev:id/btn_retake]
-Session ID: a7c5c3e0-0058-4b29-bb7e-2b07c0d4419d
-	at com.tests.MRO.Login(MRO.java:170)
+Session ID: fd4fbd1b-ef22-4d89-8d62-df896e0eec94
+	at com.tests.LoginTest.LoginLogout(LoginTest.java:102)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 26 stack frames
 </div> <!-- stack-trace -->
@@ -150,7 +149,7 @@ Session ID: a7c5c3e0-0058-4b29-bb7e-2b07c0d4419d
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\dell\eclipse-workspace\GeoToll\testng.xml</span>
+            <span class="header-content">C:\Users\dell\eclipse-workspace\GeoTollUAT\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -162,7 +161,7 @@ Session ID: a7c5c3e0-0058-4b29-bb7e-2b07c0d4419d
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.tests.MRO&quot;/&gt;
+      &lt;class name=&quot;com.tests.LoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -204,14 +203,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Login')
-data.setCell(0, 2, 'com.tests.MRO')
-data.setCell(0, 3, 40309);
+data.setCell(0, 1, 'LoginLogout')
+data.setCell(0, 2, 'com.tests.LoginTest')
+data.setCell(0, 3, 26398);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 40 seconds</span>
+              <span class="suite-total-time">Total running time: 26 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -237,7 +236,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.tests.MRO</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
@@ -245,12 +244,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">Login(udupaakshaya+QATest@gmail.com,  New@1234)</span>
-                <span class="method-start">6211 ms</span>
+                <span class="method-name">LoginLogout(udupaakshaya+QATest@gmail.com,  New@1234)</span>
+                <span class="method-start">6624 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=Login status=FAILURE method=MRO.Login(java.lang.String,java.lang.String)[pri:0, ins...)</span>
-                <span class="method-start">46951 ms</span>
+                <span class="method-name">tearDown([TestResult name=LoginLogout status=FAILURE method=LoginTest.LoginLogout(java.lang.String,java.lang....)</span>
+                <span class="method-start">33495 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -22,28 +22,27 @@ import io.appium.java_client.AppiumDriver;
 	public final class LoginTestN extends BaseTest {
 		
 		@SuppressWarnings("deprecation")
-		@Test (priority =7)
+		@Test
 		public void WrongUserIdLoginN() throws InterruptedException, IOException {
 			
 			  AppiumDriver  driver = DriverManager.getDriver();
 			  waitForTime(2000);
-			  test = extent.createTest("WrongUserIdLoginN Test");
-				 test.info("Step 1: Open the login page");
-				  test.info("Step 2: Enter username and password");
+			  
 		       
 			  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		   driver.findElement(AppiumBy.xpath("//android.widget.EditText[@resource-id=\"com.geotoll.egpsflex_android.dev:id/edt_email\"]")).click();
-		      test.info("Step 2: Enter Wrong username");
+		                                    
+		     
 			  driver.findElement(AppiumBy.xpath("//android.widget.EditText[@resource-id=\"com.geotoll.egpsflex_android.dev:id/edt_email\"]")).sendKeys("udupaakshaya@gmail.com");
 			  driver.findElement(AppiumBy.xpath("//android.widget.EditText[@resource-id=\"com.geotoll.egpsflex_android.dev:id/edt_login_password\"]")).click();
-			  test.info("Step 2: Enter Password");
+			 
 			  driver.findElement(AppiumBy.xpath("//android.widget.EditText[@resource-id=\"com.geotoll.egpsflex_android.dev:id/edt_login_password\"]")).sendKeys("New@1234");
 			 driver.navigate().back();
 			
-			 test.info("Step 4: Click on the login button");
+			
 			  driver.findElement(AppiumBy.xpath("//android.widget.Button[@resource-id=\"com.geotoll.egpsflex_android.dev:id/btn_login\"]")).click();
 			  longPress(driver.findElement(AppiumBy.xpath("//android.widget.Button[@resource-id=\"com.geotoll.egpsflex_android.dev:id/btn_login\"]")));
-			  test.pass("Login test passed.");
+			
 			  waitForTime(9000);
 			
 }

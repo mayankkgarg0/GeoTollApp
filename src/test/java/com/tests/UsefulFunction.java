@@ -1,13 +1,12 @@
 package com.tests;
-
+/*
 import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
-import org.openqa.selenium.WebElement;
+import java.util.HashMap;
+import java.util.Map;
 
-import io.appium.java_client.AppiumBy;
 
-/*
 public class UsefulFunction {
 
 	 
@@ -71,7 +70,7 @@ private String processImageWithTesseract(String imagePath) {
    
    
    
-	/* try {
+	 try {
            // Enable Bluetooth using adb command
            Runtime.getRuntime().exec("adb shell am broadcast -a io.appium.settings.bluetooth --es setstatus enable"); // For enabling Bluetooth
            System.out.println("Bluetooth has been enabled.");

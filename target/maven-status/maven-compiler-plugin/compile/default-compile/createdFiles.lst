@@ -1,0 +1,3 @@
+com\automate\entity\SearchData$SearchDataBuilder.class
+com\automate\entity\TestData$TestDataBuilder.class
+com\automate\entity\LoginData$LoginDataBuilder.class

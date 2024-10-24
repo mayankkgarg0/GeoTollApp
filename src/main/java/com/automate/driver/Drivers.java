@@ -40,9 +40,10 @@ public class Drivers extends ExtentManager {
 		.setAutomationName("UiAutomator2")
 		.setDeviceName("ZD222JNNVH")
 		
-		.setAppPackage("com.geotoll.egpsflex_android.dev")
-		.setAppActivity("com.geotoll.egpsflex_android.activities.SplashActivity");
-	        
+		//.setAppPackage("com.geotoll.egpsflex_android.dev")
+		//.setAppActivity("com.geotoll.egpsflex_android.activities.SplashActivity");
+	     .setAppPackage("com.geotoll.egpsflex_android.dev.uat")
+	     .setAppActivity("com.geotoll.egpsflex_android.activities.SplashActivity");   
 	
 	options.setAutoGrantPermissions(true);
 	return options;
