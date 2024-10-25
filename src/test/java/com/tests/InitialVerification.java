@@ -27,29 +27,29 @@ public class InitialVerification extends BaseTest {
 	//Login --1)Open camera , 2)Take Pic , 3 Send it  and store it 4) verify with order history for reading 	
 		  AppiumDriver  driver = DriverManager.getDriver();
 		  waitForTime(2000);
-		  test = extent.createTest("InitialVerification Test");
+		 // test = extent.createTest("InitialVerification Test");
 		  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	   driver.findElement(AppiumBy.xpath("//android.widget.EditText[@resource-id=\"com.geotoll.egpsflex_android.dev:id/edt_email\"]")).click();
+	   driver.findElement(AppiumBy.xpath("//android.widget.EditText[@resource-id=\"com.geotoll.egpsflex_android.dev.uat:id/edt_email\"]")).click();
 		
-		  driver.findElement(AppiumBy.xpath("//android.widget.EditText[@resource-id=\"com.geotoll.egpsflex_android.dev:id/edt_email\"]")).sendKeys("udupaakshaya+QATest@gmail.com");
-		  driver.findElement(AppiumBy.xpath("//android.widget.EditText[@resource-id=\"com.geotoll.egpsflex_android.dev:id/edt_login_password\"]")).click();
+		  driver.findElement(AppiumBy.xpath("//android.widget.EditText[@resource-id=\"com.geotoll.egpsflex_android.dev.uat:id/edt_email\"]")).sendKeys("udupaakshaya+QATest@gmail.com");
+		  driver.findElement(AppiumBy.xpath("//android.widget.EditText[@resource-id=\"com.geotoll.egpsflex_android.dev.uat:id/edt_login_password\"]")).click();
 		 
-		  driver.findElement(AppiumBy.xpath("//android.widget.EditText[@resource-id=\"com.geotoll.egpsflex_android.dev:id/edt_login_password\"]")).sendKeys("New@12345");
+		  driver.findElement(AppiumBy.xpath("//android.widget.EditText[@resource-id=\"com.geotoll.egpsflex_android.dev.uat:id/edt_login_password\"]")).sendKeys("New@1234");
 		 driver.navigate().back();
 		
 		 
-		  driver.findElement(AppiumBy.xpath("//android.widget.Button[@resource-id=\"com.geotoll.egpsflex_android.dev:id/btn_login\"]")).click();
-		  longPress(driver.findElement(AppiumBy.xpath("//android.widget.Button[@resource-id=\"com.geotoll.egpsflex_android.dev:id/btn_login\"]")));
+		  driver.findElement(AppiumBy.xpath("//android.widget.Button[@resource-id=\"com.geotoll.egpsflex_android.dev.uat:id/btn_login\"]")).click();
+		  longPress(driver.findElement(AppiumBy.xpath("//android.widget.Button[@resource-id=\"com.geotoll.egpsflex_android.dev.uat:id/btn_login\"]")));
 		  waitForTime(9000);
-		 driver.findElement(AppiumBy.xpath("//android.widget.Button[@resource-id=\"com.geotoll.egpsflex_android.dev:id/img_close\"]")).click();
+		 driver.findElement(AppiumBy.xpath("//android.widget.Button[@resource-id=\"com.geotoll.egpsflex_android.dev.uat:id/img_close\"]")).click();
 		 waitForTime(4000);
 		 
-		 WebElement OdometerEle = wait.until(ExpectedConditions.elementToBeClickable(By.id("com.geotoll.egpsflex_android.dev:id/txt_odometer_title")));
+		 WebElement OdometerEle = wait.until(ExpectedConditions.elementToBeClickable(By.id("com.geotoll.egpsflex_android.dev.uat:id/txt_odometer_title")));
 		 OdometerEle.click();
 		 waitForTime(1000);
-		 test.info("Step 1: Clicked Odometer Icon");
-		 test.info("Step 2: Capture/Store Latest Odometer Reading");
-		 WebElement MilageNum = wait.until(ExpectedConditions.elementToBeClickable(By.id("com.geotoll.egpsflex_android.dev:id/txt_odometer_mileage")));
+		// test.info("Step 1: Clicked Odometer Icon");
+		 //test.info("Step 2: Capture/Store Latest Odometer Reading");
+		 WebElement MilageNum = wait.until(ExpectedConditions.elementToBeClickable(By.id("com.geotoll.egpsflex_android.dev.uat:id/txt_odometer_mileage")));
 		 MilageNum.click();
 		 //String Status = MilageNum.getText();
 		 String Status = "Under Review";
@@ -57,33 +57,33 @@ public class InitialVerification extends BaseTest {
 		waitForTime(1000);
 	//	Response response = ApiUtil.approveValue("12350");
 		if(  !MilageNum.getText().equals(Status)) {
-			test.info("Step 3 : Captured Odometer Reading as it is not Under Review");
-			test.info("Click Capture Odometer Reading Icon");
-		WebElement CaptureOdometerReading = wait.until(ExpectedConditions.elementToBeClickable(By.id("com.geotoll.egpsflex_android.dev:id/btn_capture_odometer_reading")));
+		//	test.info("Step 3 : Captured Odometer Reading as it is not Under Review");
+			//test.info("Click Capture Odometer Reading Icon");
+		WebElement CaptureOdometerReading = wait.until(ExpectedConditions.elementToBeClickable(By.id("com.geotoll.egpsflex_android.dev.uat:id/btn_capture_odometer_reading")));
 		CaptureOdometerReading.click();
 		waitForTime(2000);
 		//WebElement OdometerCaptureBox = wait.until(ExpectedConditions.elementToBeClickable(By.id("com.geotoll.egpsflex_android.dev:id/boundaryBox")));
 		//OdometerCaptureBox.click();
 		//OdometerCaptureBox.sendKeys("12350");
-		test.info("Scan a picture Through Camera");
-		WebElement ClickImage = wait.until(ExpectedConditions.elementToBeClickable(By.id("com.geotoll.egpsflex_android.dev:id/capture")));
+		//test.info("Scan a picture Through Camera");
+		WebElement ClickImage = wait.until(ExpectedConditions.elementToBeClickable(By.id("com.geotoll.egpsflex_android.dev.uat:id/capture")));
 		ClickImage.click();
 		waitForTime(4000);
-		test.info("Click Re-Capture Odometer Reading Icon");
-		WebElement CaptureRetake = wait.until(ExpectedConditions.elementToBeClickable(By.id("com.geotoll.egpsflex_android.dev:id/btn_retake")));
+		//test.info("Click Re-Capture Odometer Reading Icon");
+		WebElement CaptureRetake = wait.until(ExpectedConditions.elementToBeClickable(By.id("com.geotoll.egpsflex_android.dev.uat:id/btn_retake")));
 		CaptureRetake.click();
 		waitForTime(2000);
-		test.info("Re-Scan a picture Through Camera");
+		//test.info("Re-Scan a picture Through Camera");
 		ClickImage.click();
 		waitForTime(2000);
-		test.info("Click Re-Capture  Odometer Reading Icon Again");
+	//	test.info("Click Re-Capture  Odometer Reading Icon Again");
 		CaptureRetake.click();
 		
-		test.info("Re-Scan a picture Through Camera Again");
+	//	test.info("Re-Scan a picture Through Camera Again");
 		waitForTime(2000);
 		ClickImage.click(); 
 		waitForTime(10000);
-		test.pass("Odometer Reading Captured");
+	//	test.pass("Odometer Reading Captured");
 		}
 		
 		else if ( MilageNum.getText().equals(Status)) {

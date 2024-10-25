@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-24T23:00:31 IST" name="Surefire suite" finished-at="2024-10-24T23:00:41 IST" duration-ms="9890">
+  <suite started-at="2024-10-25T09:47:33 IST" name="Surefire suite" finished-at="2024-10-25T09:47:42 IST" duration-ms="9170">
     <groups>
     </groups>
-    <test started-at="2024-10-24T23:00:31 IST" name="Surefire test" finished-at="2024-10-24T23:00:41 IST" duration-ms="9890">
+    <test started-at="2024-10-25T09:47:33 IST" name="Surefire test" finished-at="2024-10-25T09:47:42 IST" duration-ms="9170">
       <class name="com.tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.LoginTest@4550bb58]" started-at="2024-10-24T23:00:32 IST" name="setUp" finished-at="2024-10-24T23:00:39 IST" duration-ms="6594" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.LoginTest@4550bb58]" started-at="2024-10-25T09:47:34 IST" name="setUp" finished-at="2024-10-25T09:47:40 IST" duration-ms="6117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LoginLogout(java.lang.String,java.lang.String)[pri:0, instance:com.tests.LoginTest@4550bb58]" started-at="2024-10-24T23:00:39 IST" name="LoginLogout" data-provider="loginData" finished-at="2024-10-24T23:00:41 IST" duration-ms="2010" status="FAIL">
+        <test-method signature="LoginLogout(java.lang.String,java.lang.String)[pri:0, instance:com.tests.LoginTest@4550bb58]" started-at="2024-10-25T09:47:40 IST" name="LoginLogout" data-provider="loginData" finished-at="2024-10-25T09:47:42 IST" duration-ms="2021" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -68,7 +68,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginLogout -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.tests.LoginTest@4550bb58]" started-at="2024-10-24T23:00:41 IST" name="tearDown" finished-at="2024-10-24T23:00:41 IST" duration-ms="475" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.tests.LoginTest@4550bb58]" started-at="2024-10-25T09:47:42 IST" name="tearDown" finished-at="2024-10-25T09:47:42 IST" duration-ms="306" status="PASS">
           <params>
             <param index="0">
               <value>
