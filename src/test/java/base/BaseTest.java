@@ -2,10 +2,10 @@ package base;
 
 import com.automate.driver.Drivers;
 import com.automate.driver.factory.DriverFactory;
-import com.automate.driver.manager.DeviceManager;
+
 import com.automate.driver.manager.DriverManager;
-import com.automate.driver.manager.PlatformManager;
-import com.automate.enums.MobilePlatformName;
+
+
 
 
 import io.appium.java_client.AppiumBy;
