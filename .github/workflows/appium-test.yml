@@ -1,0 +1,88 @@
+name: Appium Test and Deploy
+description: "This Action will collect details and trigger Appium tests for the app, then deploy the app if tests are successful."
+inputs:
+  project_name:
+    description: 'Project name for Appium testing.'
+    required: true
+    default: 'unknown'
+  flavor:
+    description: 'Flavor name for the app being tested.'
+    required: true
+    default: ''
+  environment:
+    description: 'The environment (e.g., dev, staging, prod) for the tests.'
+    required: true
+    default: 'dev'
+
+runs:
+  using: "composite"
+  steps:
+    - name: ✨ Action triggered for ${{ inputs.flavor }} Appium Test.
+      shell: bash
+      run: |
+        echo "Action triggered for Appium testing on project: ${{ inputs.project_name }} with flavor: ${{ inputs.flavor }} in environment: ${{ inputs.environment }}"
+
+    - name: 🛠️ Set up environment for Appium tests.
+      shell: bash
+      run: |
+        echo "PROJECT="${{ inputs.project_name }}"" >> $GITHUB_ENV
+        echo "FLAVOR="${{ inputs.flavor }}"" >> $GITHUB_ENV
+        echo "ENVIRONMENT="${{ inputs.environment }}"" >> $GITHUB_ENV
+        echo "TEST_RESULTS_PATH=${{ github.workspace }}/test-results" >> $GITHUB_ENV
+        mkdir -p ${{ github.workspace }}/test-results
+        ls -la
+        pwd
+
+    - name: 🔨 Install dependencies for Appium.
+      shell: bash
+      run: |
+        npm install -g appium
+        npm install -g appium-doctor
+        appium-doctor # Check if Appium setup is correct
+        npm install # Install project dependencies from package.json
+
+    - name: 🧪 Run Appium tests.
+      shell: bash
+      run: |
+        echo "Running Appium tests for ${{ inputs.project_name }} flavor ${{ inputs.flavor }}."
+        # Run Appium tests (assuming test scripts are in the 'test' directory)
+        appium & # Start Appium server in background
+        sleep 10 # Give Appium time to start
+        npm test # Run tests with npm, or replace this with the appropriate test command
+        appium_pid=$(pgrep -f appium)
+        kill $appium_pid # Stop the Appium server after tests
+
+    - name: 📂 Upload Test Results.
+      uses: actions/upload-artifact@v4
+      with:
+        name: "${{ inputs.flavor }}_${{ inputs.environment }}_test_results"
+        path: ${{ env.TEST_RESULTS_PATH }}
+
+    - name: 📝 Test Summary and Report.
+      shell: bash
+      run: |
+        # Assuming you have a test summary file or JSON output
+        if [ -f "${{ env.TEST_RESULTS_PATH }}/test-summary.json" ]; then
+          echo "Test summary: "
+          cat "${{ env.TEST_RESULTS_PATH }}/test-summary.json"
+        else
+          echo "No test summary found."
+        fi
+
+    - name: 🚀 Deploy App after successful tests.
+      if: success()  # Deploy only if tests are successful
+      shell: bash
+      run: |
+        echo "Tests passed, proceeding to deploy the app."
+        bundle exec fastlane deploy  # Replace with your deployment command
+
+    - name: 🧹 Clean up resources.
+      shell: bash
+      run: |
+        # Clean up generated files and folders after testing
+        if [ -f "${{ github.workspace }}/keystore.jks" ]; then
+          rm -f ${{ github.workspace }}/keystore.jks
+        fi
+        if [ -d "${{ env.TEST_RESULTS_PATH }}" ]; then
+          rm -rf ${{ env.TEST_RESULTS_PATH }}
+        fi
