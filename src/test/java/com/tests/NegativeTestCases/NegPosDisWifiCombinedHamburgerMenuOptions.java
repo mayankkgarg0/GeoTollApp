@@ -607,7 +607,7 @@ public class NegPosDisWifiCombinedHamburgerMenuOptions extends BaseTest {
 	}
 	
 	
-	public static void swipe(Point start, Point end, Duration duration) {
+	public  void swipe(Point start, Point end, Duration duration) {
 		AppiumDriver driver = DriverManager.getDriver();
         PointerInput input = new PointerInput(PointerInput.Kind.TOUCH, "finger1");
         Sequence swipe = new Sequence(input, 0);
@@ -618,7 +618,7 @@ public class NegPosDisWifiCombinedHamburgerMenuOptions extends BaseTest {
         driver.perform(ImmutableList.of(swipe));
     }
 	
-	  public static void scroll(String pageDirection, double scrollRatio){
+	  public  void scroll(String pageDirection, double scrollRatio){
 		AppiumDriver driver = DriverManager.getDriver();
 		Duration SCROLL_DUR = Duration.ofMillis(300);
         if (scrollRatio < 0 || scrollRatio > 1) {

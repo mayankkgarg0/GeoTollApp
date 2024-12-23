@@ -2,43 +2,43 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-27T17:31:18 IST" name="Suite" finished-at="2024-11-27T17:34:43 IST" duration-ms="204846">
+  <suite started-at="2024-12-16T16:12:58 IST" name="Suite" finished-at="2024-12-16T16:15:41 IST" duration-ms="163831">
     <groups>
     </groups>
-    <test started-at="2024-11-27T17:31:18 IST" name="Test" finished-at="2024-11-27T17:34:43 IST" duration-ms="204846">
-      <class name="com.tests.NegativeTestCases.NegPosDisWifiCombinedHamburgerMenuOptions">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.NegativeTestCases.NegPosDisWifiCombinedHamburgerMenuOptions@2a4fb17b]" started-at="2024-11-27T17:31:19 IST" name="setUp" finished-at="2024-11-27T17:31:27 IST" duration-ms="7546" status="PASS">
+    <test started-at="2024-12-16T16:12:58 IST" name="Test" finished-at="2024-12-16T16:15:41 IST" duration-ms="163831">
+      <class name="UpdatedTestCases.ModifiedOneNegDisWifiCombinedMRO">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:UpdatedTestCases.ModifiedOneNegDisWifiCombinedMRO@4c583ecf]" started-at="2024-12-16T16:12:59 IST" name="setUp" finished-at="2024-12-16T16:13:06 IST" duration-ms="7890" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="NegPosDisWifiCombinedHamburgerSideMenuOption(java.lang.String,java.lang.String)[pri:0, instance:com.tests.NegativeTestCases.NegPosDisWifiCombinedHamburgerMenuOptions@2a4fb17b]" started-at="2024-11-27T17:31:27 IST" name="NegPosDisWifiCombinedHamburgerSideMenuOption" data-provider="MROData" finished-at="2024-11-27T17:34:42 IST" duration-ms="195251" status="PASS">
+        <test-method signature="ModifiedOneNegDisWifiCombinedMROMethod(java.lang.String,java.lang.String)[pri:0, instance:UpdatedTestCases.ModifiedOneNegDisWifiCombinedMRO@4c583ecf]" started-at="2024-12-16T16:13:06 IST" name="ModifiedOneNegDisWifiCombinedMROMethod" data-provider="MROData" finished-at="2024-12-16T16:15:41 IST" duration-ms="154132" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[udupaakshaya+QATest@gmail.com]]>
+                <![CDATA[mayankkgarg0+stage.pilot@gmail.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[ New@1234]]>
+                <![CDATA[ New@12345]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- NegPosDisWifiCombinedHamburgerSideMenuOption -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.tests.NegativeTestCases.NegPosDisWifiCombinedHamburgerMenuOptions@2a4fb17b]" started-at="2024-11-27T17:34:43 IST" name="tearDown" finished-at="2024-11-27T17:34:43 IST" duration-ms="384" status="PASS">
+        </test-method> <!-- ModifiedOneNegDisWifiCombinedMROMethod -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:UpdatedTestCases.ModifiedOneNegDisWifiCombinedMRO@4c583ecf]" started-at="2024-12-16T16:15:41 IST" name="tearDown" finished-at="2024-12-16T16:15:41 IST" duration-ms="393" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=NegPosDisWifiCombinedHamburgerSideMenuOption status=SUCCESS method=NegPosDisWifiCombinedHamburgerMenuOptions.NegPosDisWifiCombinedHamburgerSideMenuOption(java.lang.String,java.lang.String)[pri:0, instance:com.tests.NegativeTestCases.NegPosDisWifiCombinedHamburgerMenuOptions@2a4fb17b] output={null}]]]>
+                <![CDATA[[TestResult name=ModifiedOneNegDisWifiCombinedMROMethod status=SUCCESS method=ModifiedOneNegDisWifiCombinedMRO.ModifiedOneNegDisWifiCombinedMROMethod(java.lang.String,java.lang.String)[pri:0, instance:UpdatedTestCases.ModifiedOneNegDisWifiCombinedMRO@4c583ecf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.tests.NegativeTestCases.NegPosDisWifiCombinedHamburgerMenuOptions -->
+      </class> <!-- UpdatedTestCases.ModifiedOneNegDisWifiCombinedMRO -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

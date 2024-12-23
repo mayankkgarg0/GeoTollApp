@@ -6,9 +6,9 @@
     </listeners>
   <test  name="Test">
     <classes>
-         
-          <class name="UpdatedTestCases.ModifiedOneNegDisWifiCombinedMRO"/>
-    <!--  <class name="com.tests.NegativeTestCases.NegDisWifiCombinedMRO"/>
+         <class name="UpdatedTestCases.DashboardItems"/>
+   <!--  <class name="UpdatedTestCases.ModifiedOneNegDisWifiCombinedMRO"/>
+         <class name="com.tests.NegativeTestCases.NegDisWifiCombinedMRO"/>
          <class name="com.tests.LoginTest"/>     
          <class name="com.tests.NegativeTestCases.NegPosDisWifiCombinedHamburgerMenuOptions"/> 
         

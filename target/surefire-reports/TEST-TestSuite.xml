@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="206.316" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="164.886" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\dell\AppData\Local\Temp\surefire13219291300142620362\surefirebooter13856296866097451012.jar C:\Users\dell\AppData\Local\Temp\surefire13219291300142620362 2024-11-27T17-31-16_492-jvmRun1 surefire16698665143199173469tmp surefire_07028589600735748419tmp"/>
+    <property name="sun.java.command" value="C:\Users\dell\AppData\Local\Temp\surefire17922678220271143216\surefirebooter11443151196270274500.jar C:\Users\dell\AppData\Local\Temp\surefire17922678220271143216 2024-12-16T16-12-56_568-jvmRun1 surefire17037060934954846285tmp surefire_017348913331739556795tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\dell\eclipse-workspace\GeoTollUAT\target\test-classes;C:\Users\dell\eclipse-workspace\GeoTollUAT\target\classes;C:\Users\dell\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\dell\.m2\repository\io\appium\java-client\8.6.0\java-client-8.6.0.jar;C:\Users\dell\.m2\repository\org\seleniumhq\selenium\selenium-api\4.13.0\selenium-api-4.13.0.jar;C:\Users\dell\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.13.0\selenium-remote-driver-4.13.0.jar;C:\Users\dell\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\dell\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\dell\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\dell\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\dell\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\dell\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\dell\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\dell\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\dell\.m2\repository\io\netty\netty-buffer\4.1.96.Final\netty-buffer-4.1.96.Final.jar;C:\Users\dell\.m2\repository\io\netty\netty-codec-http\4.1.96.Final\netty-codec-http-4.1.96.Final.jar;C:\Users\dell\.m2\repository\io\netty\netty-codec\4.1.96.Final\netty-codec-4.1.96.Final.jar;C:\Users\dell\.m2\repository\io\netty\netty-handler\4.1.96.Final\netty-handler-4.1.96.Final.jar;C:\Users\dell\.m2\repository\io\netty\netty-common\4.1.96.Final\netty-common-4.1.96.Final.jar;C:\Users\dell\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.96.Final\netty-transport-classes-epoll-4.1.96.Final.jar;C:\Users\dell\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.96.Final\netty-transport-classes-kqueue-4.1.96.Final.jar;C:\Users\dell\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final.jar;C:\Users\dell\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final.jar;C:\Users\dell\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final.jar;C:\Users\dell\.m2\repository\io\netty\netty-transport\4.1.96.Final\netty-transport-4.1.96.Final.jar;C:\Users\dell\.m2\repository\io\netty\netty-resolver\4.1.96.Final\netty-resolver-4.1.96.Final.jar;C:\Users\dell\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\dell\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\dell\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\dell\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\dell\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\dell\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\dell\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\dell\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\dell\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\dell\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\dell\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\dell\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\dell\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\dell\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\dell\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\dell\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\dell\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\dell\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\dell\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\dell\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\dell\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\dell\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\dell\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\dell\.m2\repository\org\seleniumhq\selenium\selenium-http\4.13.0\selenium-http-4.13.0.jar;C:\Users\dell\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\dell\.m2\repository\org\seleniumhq\selenium\selenium-json\4.13.0\selenium-json-4.13.0.jar;C:\Users\dell\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.13.0\selenium-manager-4.13.0.jar;C:\Users\dell\.m2\repository\org\seleniumhq\selenium\selenium-os\4.13.0\selenium-os-4.13.0.jar;C:\Users\dell\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\dell\.m2\repository\org\seleniumhq\selenium\selenium-support\4.13.0\selenium-support-4.13.0.jar;C:\Users\dell\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\dell\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\dell\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\dell\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\dell\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\dell\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\dell\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\dell\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\dell\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\dell\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\dell\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\dell\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\dell\.m2\repository\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;C:\Users\dell\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\dell\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\dell\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\dell\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\dell\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\dell\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\dell\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\dell\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\dell\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\dell\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\dell\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\dell\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\dell\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\dell\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\dell\.m2\repository\com\aventstack\extentreports\4.0.9\extentreports-4.0.9.jar;C:\Users\dell\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\dell\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\dell\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\dell\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\dell\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\dell\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\dell\.m2\repository\org\apache\logging\log4j\log4j-api\2.18.0\log4j-api-2.18.0.jar;C:\Users\dell\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\dell\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\dell\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\dell\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\dell\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\dell\AppData\Local\Temp\surefire13219291300142620362\surefirebooter13856296866097451012.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\dell\AppData\Local\Temp\surefire17922678220271143216\surefirebooter11443151196270274500.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.3+7-LTS-152"/>
@@ -58,13 +58,30 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="NegPosDisWifiCombinedHamburgerSideMenuOption[udupaakshaya+QATest@gmail.com,  New@1234](1)" classname="com.tests.NegativeTestCases.NegPosDisWifiCombinedHamburgerMenuOptions" time="195.685">
+  <testcase name="ModifiedOneNegDisWifiCombinedMROMethod[mayankkgarg0+stage.pilot@gmail.com,  New@12345](1)" classname="UpdatedTestCases.ModifiedOneNegDisWifiCombinedMRO" time="154.597">
     <system-out><![CDATA[-------- Started: GeoToll  Apk ----------
 ---------- Appium Driver has been set (Threadlocal) ----------
 ---------- Android Driver has been set in ThreadLocal ----------
-Test started: NegPosDisWifiCombinedHamburgerSideMenuOption
+Test started: ModifiedOneNegDisWifiCombinedMROMethod
+BluetoothOn
 Mobile Data & WiFI has been Enabled
-Mobile Data & WiFI has been Disabled
+Screenshot saved Successfully
+Screen Size = (1080, 2400)
+
+Midpoint: (540, 1200)
+Midpoint x: 540
+a: 270
+Midpoint y: 1200
+b: 600
+
+Bottom: 1800
+Top: 600
+Right: 810
+Left: 270
+--------------------
+Mobile Data & WiFI has been Enabled
+Screenshot saved Successfully
+Mobile Data & WiFI has been Enabled
 Screen Size = (1080, 2400)
 
 Midpoint: (540, 1200)
@@ -79,29 +96,126 @@ Right: 810
 Left: 270
 --------------------
 Screenshot saved Successfully
+BluetoothOff
+Screen Size = (1080, 2400)
+
+Midpoint: (540, 1200)
+Midpoint x: 540
+a: 432
+Midpoint y: 1200
+b: 960
+
+Bottom: 2160
+Top: 240
+Right: 972
+Left: 108
+--------------------
 Screenshot saved Successfully
-Mobile Data & WiFI has been Enabled
+Screen Size = (1080, 2400)
+
+Midpoint: (540, 1200)
+Midpoint x: 540
+a: 270
+Midpoint y: 1200
+b: 600
+
+Bottom: 1800
+Top: 600
+Right: 810
+Left: 270
+--------------------
 Screenshot saved Successfully
-1934
+Screen Size = (1080, 2400)
+
+Midpoint: (540, 1200)
+Midpoint x: 540
+a: 270
+Midpoint y: 1200
+b: 600
+
+Bottom: 1800
+Top: 600
+Right: 810
+Left: 270
+--------------------
+BluetoothOn
+Screen Size = (1080, 2400)
+
+Midpoint: (540, 1200)
+Midpoint x: 540
+a: 432
+Midpoint y: 1200
+b: 960
+
+Bottom: 2160
+Top: 240
+Right: 972
+Left: 108
+--------------------
+Screenshot saved Successfully
+BluetoothOn
+Screenshot saved Successfully
 Mobile Data & WiFI has been Disabled
+BluetoothOff
+Screen Size = (1080, 2400)
+
+Midpoint: (540, 1200)
+Midpoint x: 540
+a: 432
+Midpoint y: 1200
+b: 960
+
+Bottom: 2160
+Top: 240
+Right: 972
+Left: 108
+--------------------
+Screen Size = (1080, 2400)
+
+Midpoint: (540, 1200)
+Midpoint x: 540
+a: 270
+Midpoint y: 1200
+b: 600
+
+Bottom: 1800
+Top: 600
+Right: 810
+Left: 270
+--------------------
 Screenshot saved Successfully
-Element found: Privacy Policy
-Web page not available
+Screen Size = (1080, 2400)
+
+Midpoint: (540, 1200)
+Midpoint x: 540
+a: 432
+Midpoint y: 1200
+b: 960
+
+Bottom: 2160
+Top: 240
+Right: 972
+Left: 108
+--------------------
 Screenshot saved Successfully
+BluetoothOn
 Mobile Data & WiFI has been Enabled
+Screen Size = (1080, 2400)
+
+Midpoint: (540, 1200)
+Midpoint x: 540
+a: 432
+Midpoint y: 1200
+b: 960
+
+Bottom: 2160
+Top: 240
+Right: 972
+Left: 108
+--------------------
 Screenshot saved Successfully
-Element found: Privacy Policy
-Mobile Data & WiFI has been Disabled
 Screenshot saved Successfully
-Screenshot saved Successfully
-Mobile Data & WiFI has been Enabled
-Screenshot saved Successfully
-Screenshot saved Successfully
-Mobile Data & WiFI has been Disabled
-Screenshot saved Successfully
-Screenshot saved Successfully
-Mobile Data & WiFI has been Enabled
-Test passed: NegPosDisWifiCombinedHamburgerSideMenuOption
+Test passed: ModifiedOneNegDisWifiCombinedMROMethod
 Screenshot saved Successfully
 ]]></system-out>
     <system-err><![CDATA[SLF4J: No SLF4J providers were found.
